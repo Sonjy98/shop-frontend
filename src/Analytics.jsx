@@ -1,5 +1,6 @@
 // src/Analytics.jsx
 import React from 'react';
+import Navbar from './Navbar';
 
 function Analytics() {
   const downloadCSV = () => {
@@ -24,6 +25,8 @@ function Analytics() {
   };
 
   return (
+    <>
+    <Navbar />
     <div className="max-w-4xl mx-auto px-4 py-10 text-center">
       <h1 className="text-3xl font-bold mb-4">📊 Analytics</h1>
       <p className="text-gray-600 mb-6">Export raw order data as CSV for analysis.</p>
@@ -34,6 +37,7 @@ function Analytics() {
         Download Order CSV
       </button>
     </div>
+    </>
   );
 }
 

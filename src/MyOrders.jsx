@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import Navbar from './Navbar';
 
 const API_BASE = import.meta.env.VITE_API_BASE;
 
@@ -18,6 +19,8 @@ function MyOrders() {
   }, []);
 
   return (
+    <>
+    <Navbar />
     <div className="min-h-screen bg-gray-900 text-white p-6">
       <h2 className="text-3xl font-bold mb-6">🧾 My Orders</h2>
 
@@ -54,6 +57,7 @@ function MyOrders() {
         </div>
       )}
     </div>
+    </>
   );
 }
 
